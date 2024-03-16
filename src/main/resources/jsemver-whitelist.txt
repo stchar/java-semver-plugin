@@ -1,0 +1,44 @@
+method com.github.zafarkhaja.semver.Version$Builder setVersionCore long long long
+method com.github.zafarkhaja.semver.Version$Builder setPreReleaseVersion java.lang.String[]
+method com.github.zafarkhaja.semver.Version setPreReleaseVersion java.lang.String
+method com.github.zafarkhaja.semver.Version$Builder addPreReleaseIdentifiers java.lang.String[]
+method com.github.zafarkhaja.semver.Version$Builder build
+
+method com.github.zafarkhaja.semver.Version isEquivalentTo com.github.zafarkhaja.semver.Version
+method com.github.zafarkhaja.semver.Version isHigherThan com.github.zafarkhaja.semver.Version
+method com.github.zafarkhaja.semver.Version isHigherThanOrEquivalentTo com.github.zafarkhaja.semver.Version
+method com.github.zafarkhaja.semver.Version isLowerThan com.github.zafarkhaja.semver.Version
+method com.github.zafarkhaja.semver.Version isLowerThanOrEquivalentTo com.github.zafarkhaja.semver.Version
+
+staticMethod com.github.zafarkhaja.semver.Version parse java.lang.String
+staticMethod com.github.zafarkhaja.semver.Version of long
+staticMethod com.github.zafarkhaja.semver.Version of long java.lang.String
+staticMethod com.github.zafarkhaja.semver.Version of long java.lang.String java.lang.String
+staticMethod com.github.zafarkhaja.semver.Version of long long
+staticMethod com.github.zafarkhaja.semver.Version of long long java.lang.String
+staticMethod com.github.zafarkhaja.semver.Version of long long java.lang.String java.lang.String
+staticMethod com.github.zafarkhaja.semver.Version of long long long
+staticMethod com.github.zafarkhaja.semver.Version of long long long java.lang.String
+staticMethod com.github.zafarkhaja.semver.Version of long long long java.lang.String java.lang.String
+
+method com.github.zafarkhaja.semver.Version nextMajorVersion java.lang.String[]
+method com.github.zafarkhaja.semver.Version nextMinorVersion java.lang.String[]
+method com.github.zafarkhaja.semver.Version nextPatchVersion java.lang.String[]
+method com.github.zafarkhaja.semver.Version nextPreReleaseVersion java.lang.String[]
+method com.github.zafarkhaja.semver.Version setPreReleaseVersion java.lang.String
+method com.github.zafarkhaja.semver.Version toStableVersion
+method com.github.zafarkhaja.semver.Version withBuildMetadata java.lang.String[]
+
+method com.github.zafarkhaja.semver.Version majorVersion
+method com.github.zafarkhaja.semver.Version minorVersion
+method com.github.zafarkhaja.semver.Version patchVersion
+method com.github.zafarkhaja.semver.Version preReleaseVersion
+method com.github.zafarkhaja.semver.Version buildMetadata
+
+field com.github.zafarkhaja.semver.Version major
+field com.github.zafarkhaja.semver.Version minor
+field com.github.zafarkhaja.semver.Version patch
+field com.github.zafarkhaja.semver.Version preReleaseIds
+field com.github.zafarkhaja.semver.Version buildIds
+
+

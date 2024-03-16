@@ -1,0 +1,2 @@
+_extends: .github
+tag-template: java-semver-$NEXT_MINOR_VERSION

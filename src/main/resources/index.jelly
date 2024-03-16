@@ -1,0 +1,4 @@
+<?jelly escape-by-default='true'?>
+<div>
+    this plugin provides global <span>semver</span> variable to build versions in pipeline scripts
+</div>

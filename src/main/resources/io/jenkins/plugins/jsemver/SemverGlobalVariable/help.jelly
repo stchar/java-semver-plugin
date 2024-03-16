@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?jelly escape-by-default='true'?>
+<j:jelly xmlns:j="jelly:core">
+    <p>
+        The <code>semver</code> variable acts as proxy object to access
+        <code>com.github.zafarkhaja.semver.Version</code> static methods.
+        see https://github.com/zafarkhaja/jsemver
+    </p>
+
+</j:jelly>
