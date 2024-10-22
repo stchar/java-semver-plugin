@@ -1,26 +1,24 @@
-# java-semver
+# java-semver-plugin
 
 ## Introduction
 
-TODO Describe what your plugin does here
+This plugin adds [https://github.com/zafarkhaja/jsemver](jsemver) support for pipelines and shared libraries.
+It also lets other plugins use jsemver as a dependecy.
 
 ## Getting started
+The plugin adds `semver` global variable so you can access it in the pipeline as it was `env` object.
+```
+def v1 = semver.parse("1.2.3-rc.1+build.1");
+def v2 = semver.parse("1.2.3-rc.1+build.2");
 
-TODO Tell users how to configure your plugin here, include screenshots, pipeline examples and 
-configuration-as-code examples.
+assert v1.isHigherThan(v2) == false;
+```
 
 ## Issues
-
-TODO Decide where you're going to host your issues, the default is Jenkins JIRA, but you can also enable GitHub issues,
-If you use GitHub issues there's no need for this section; else add the following line:
-
-Report issues and enhancements in the [Jenkins issue tracker](https://issues.jenkins.io/).
+Create github issue if you want to report a bug or suggest a new feature
 
 ## Contributing
-
-TODO review the default [CONTRIBUTING](https://github.com/jenkinsci/.github/blob/master/CONTRIBUTING.md) file and make sure it is appropriate for your plugin, if not then add your own one adapted from the base file
-
-Refer to our [contribution guidelines](https://github.com/jenkinsci/.github/blob/master/CONTRIBUTING.md)
+Refer to jenkinsci [contribution guidelines](https://github.com/jenkinsci/.github/blob/master/CONTRIBUTING.md)
 
 ## LICENSE
 
